@@ -45,6 +45,30 @@
     <title>VOT Challenge</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script>
+        var list = document.getElementById("sorted-list");
+        var listItems = list.getElementsByTagName("li");
+      
+        // Convert the HTMLCollection to an array for sorting
+        var itemsArray = Array.prototype.slice.call(listItems);
+      
+        // Sort the array alphabetically
+        itemsArray.sort(function(a, b) {
+          var textA = a.innerText || a.textContent;
+          var textB = b.innerText || b.textContent;
+          return textA.localeCompare(textB);
+        });
+      
+        // Remove existing list items
+        while (list.firstChild) {
+          list.removeChild(list.firstChild);
+        }
+      
+        // Add sorted list items back to the list
+        for (var i = 0; i < itemsArray.length; i++) {
+          list.appendChild(itemsArray[i]);
+        }
+    </script>
 </head>
 <body>
     <div id="header">
@@ -126,16 +150,115 @@
 
                 <p>All VOT2023 datasets are available through the VOT toolkit.</p>
                 <p>The following gallery gives an overview of the datasets (hover over image to see the video, click to view sequence details).</p>
+                
+                <div>
+                    <h3>List of items:</h3>
+                    <ul class="navigator" id="sorted-list">
+                        <li><a href="#squirrel">Squirrel</a></li>
+                        <li><a href="#drone1">Drone</a></li>
+                        <li><a href="#ants1">Ants</a></li>
+                        <li><a href="#bicycle">Bicycle</a></li>
+                        <li><a href="#dog-7">Dog</a></li>
+                        <li><a href="#bolt1">Bolt</a></li>
+                        <li><a href="#car">Car</a></li>
+
+                        <li><a href="#squirrel">Squirrel</a></li>
+                        <li><a href="#drone1">Drone</a></li>
+                        <li><a href="#ants1">Ants</a></li>
+                        <li><a href="#bicycle">Bicycle</a></li>
+                        <li><a href="#dog-7">Dog</a></li>
+                        <li><a href="#bolt1">Bolt</a></li>
+                        <li><a href="#car">Car</a></li>
+                        <li><a href="#squirrel">Squirrel</a></li>
+                        <li><a href="#drone1">Drone</a></li>
+                        <li><a href="#ants1">Ants</a></li>
+                        <li><a href="#bicycle">Bicycle</a></li>
+                        <li><a href="#dog-7">Dog</a></li>
+                        <li><a href="#bolt1">Bolt</a></li>
+                        <li><a href="#car">Car</a></li>
+                        <li><a href="#squirrel">Squirrel</a></li>
+                        <li><a href="#drone1">Drone</a></li>
+                        <li><a href="#ants1">Ants</a></li>
+                        <li><a href="#bicycle">Bicycle</a></li>
+                        <li><a href="#dog-7">Dog</a></li>
+                        <li><a href="#bolt1">Bolt</a></li>
+                        <li><a href="#car">Car</a></li>
+                        <li><a href="#squirrel">Squirrel</a></li>
+                        <li><a href="#drone1">Drone</a></li>
+                        <li><a href="#ants1">Ants</a></li>
+                        <li><a href="#bicycle">Bicycle</a></li>
+                        <li><a href="#dog-7">Dog</a></li>
+                        <li><a href="#bolt1">Bolt</a></li>
+                        <li><a href="#car">Car</a></li>
+                    </ul>
+                    
+                </div>
                 <h3 id="vot-stb2022-dataset-preview">VOT 2023 dataset preview</h3>
-                <video width="auto" height="200" muted controls loop class="unmute unmute2" >
-                    <source src="Videos/squirrel.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <video width="auto" height="200" muted controls loop>
-                    <source src="Videos/drone1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <!-- <div class="gallery" data-votdataset="/workspaces/CVUT-FEL/Videos"></div> -->
+
+                <div class="videos">
+                    <video class="myvideo" id="squirrel" muted controls  >
+                        <source src="Videos/squirrel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="drone1" muted controls >
+                        <source src="Videos/drone1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="ants1" muted controls  >
+                        <source src="Videos/ants1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="bicycle" muted controls  >
+                        <source src="Videos/bicycle.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="dog-7" muted controls  >
+                        <source src="Videos/dog-7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="bolt1" muted controls  >
+                        <source src="Videos/bolt1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="car" muted controls  >
+                        <source src="Videos/car.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                
+                    <!--Here comes the same videos-->
+
+                    <video class="myvideo" id="squirrel" muted controls  >
+                        <source src="Videos/squirrel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="drone1" muted controls >
+                        <source src="Videos/drone1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="ants1" muted controls  >
+                        <source src="Videos/ants1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="bicycle" muted controls  >
+                        <source src="Videos/bicycle.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="dog-7" muted controls  >
+                        <source src="Videos/dog-7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="bolt1" muted controls  >
+                        <source src="Videos/bolt1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <video class="myvideo" id="car" muted controls  >
+                        <source src="Videos/car.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                
+                
 
             </div>
         </div>
@@ -143,9 +266,11 @@
     </div>
     <footer>
         <div class="hosted">
+            <!--
             <a href="https://www.arnes.si/en/">
                 <img src="/img/org/logo_arnes.png" alt="ARNES">
             </a>
+            -->
             <div>
                 The website of the VOT challenges is hosted on the servers of the 
                 <a href="https://www.arnes.si/en/">Academic and Research Network of Slovenia (ARNES)</a>
