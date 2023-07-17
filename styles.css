@@ -1,7 +1,25 @@
-    /* Hide the audio button */
-    .unmute::-webkit-media-controls-mute-button {
-        display: none;
-        }
-    .unmute2::-webkit-media-controls-volume-slider {
-        display: none;
-        }
+/* Hide the audio button */
+.unmute::-webkit-media-controls-mute-button {
+    display: none;
+    }
+.unmute2::-webkit-media-controls-volume-slider {
+    display: none;
+    }
+
+video:hover{
+        transform:scale(1.05);
+        
+    }
+
+.myvideo {
+    border-radius: 20px;
+    padding: 5px;
+    width: auto;
+    height: 150px;
+}
+
+.navigator{
+    -webkit-columns: 2; /* Number of columns */
+    -moz-columns: 2;
+    columns: 5;
+  }
