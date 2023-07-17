@@ -1,0 +1,7 @@
+    /* Hide the audio button */
+    .unmute::-webkit-media-controls-mute-button {
+        display: none;
+        }
+    .unmute2::-webkit-media-controls-volume-slider {
+        display: none;
+        }
