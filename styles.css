@@ -23,3 +23,18 @@ video:hover{
     -moz-columns: 2;
     columns: 5;
   }
+
+  .hover-element {
+    margin-left: 10px;
+    height: 15px;
+    visibility: hidden;
+    cursor: pointer;
+    /* Add other styles as per your requirements */
+  }
+  
+  li:hover .hover-element {
+    visibility: visible;
+    /* Add other styles you want to apply on hover */
+  }
+  
+  
