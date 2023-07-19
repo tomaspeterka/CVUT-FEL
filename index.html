@@ -69,6 +69,8 @@
           list.appendChild(itemsArray[i]);
         }
     </script>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="header">
@@ -152,208 +154,21 @@
                 <p>The following gallery gives an overview of the dataset (hover over image to see the video, click to view sequence details).</p>
                 
                 <div>
-                    <h3>List of items:</h3>
-                    <ul class="navigator" id="sorted-list">
-                        <!-- <li><a href="#squirrel">Squirrel</a></li>
-                        <li><a href="#drone1">Drone</a></li>
-                        <li><a href="#ants1">Ants</a></li>
-                        <li><a href="#bicycle">Bicycle</a></li>
-                        <li><a href="#dog-7">Dog</a></li>
-                        <li><a href="#bolt1">Bolt</a></li>
-                        <li><a href="#car">Car</a></li> -->
-                        
-                        <li>
-                            <a href="#agility">Agility</a><img src="download.png" class="hover-element">
-                        </li>
-                          
+                    <h3>List of sequences:</h3>
 
-                        <li><a href="#agility">Agility</a></li>
-                        <li><a href="#animal">Animal</a></li>
-                        <li><a href="#ants1">Ants</a></li>
-                        <li><a href="#bag">Bag</a></li>
-                        <li><a href="#ball3">Ball</a></li>
-                        <li><a href="#basketball">Basketball</a></li>
-                        <li><a href="#basketball-11">Basketball</a></li>
-                        <li><a href="#beaker">Beaker</a></li>
-                        <li><a href="#bear-6">Bear</a></li>
-                        <li><a href="#bicycle">Bicycle</a></li>
-                        <li><a href="#bicycle-7">Bicycle</a></li>
-                        <li><a href="#bird-15">Bird</a></li>
-                        <li><a href="#bird-2">Bird</a></li>
-                        <li><a href="#birds1">Birds</a></li>
-                        <li><a href="#boat">Boat</a></li>
-                        <li><a href="#bolt1">Bolt</a></li>
-                        <li><a href="#book">Book</a></li>
-                        <li><a href="#book-3">Book</a></li>
-                        <li><a href="#bottle">Bottle</a></li>
-                        <li><a href="#bubble">Bubble</a></li>
-                        <li><a href="#bull">Bull</a></li>
-                        <li><a href="#bus">Bus</a></li>
-                        <li><a href="#bus-2">Bus</a></li>
-                        <li><a href="#car">Car</a></li>
-                        <li><a href="#car-9">Car</a></li>
-                        <li><a href="#carchase">Carchase</a></li>
-                        <li><a href="#cat">Cat</a></li>
-                        <li><a href="#cattle-13">Cattle</a></li>
-                        <li><a href="#chameleon-20">Chameleon</a></li>
-                        <li><a href="#clownfish">Clownfish</a></li>
-                        <li><a href="#colorfish">Colorfish</a></li>
-                        <li><a href="#conduction1">Conduction</a></li>
-                        <li><a href="#crab-18">Crab</a></li>
-                        <li><a href="#crab-6">Crab</a></li>
-                        <li><a href="#crabs1">Crabs</a></li>
-                        <li><a href="#dancingshoe">Dancingshoe</a></li>
-                        <li><a href="#deer">Deer</a></li>
-                        <li><a href="#diabolo">Diabolo</a></li>
-                        <li><a href="#diving">Diving</a></li>
-                        <li><a href="#dog">Dog</a></li>
-                        <li><a href="#dog-7">Dog</a></li>
-                        <li><a href="#dog1">Dog</a></li>
-                        <li><a href="#dolphins">Dolphins</a></li>
-                        <li><a href="#domino_damselfish">Domino Damselfish</a></li>
-                        <li><a href="#dragon">Dragon</a></li>
-                        <li><a href="#drone">Drone</a></li>
-                        <li><a href="#drone1">Drone</a></li>
-                        <li><a href="#drone_across">Drone</a></li>
-                        <li><a href="#duck">Duck</a></li>
-                        <li><a href="#f1">F1</a></li>
-                        <li><a href="#fernando">Fernando</a></li>
-                        <li><a href="#fish1">Fish</a></li>
-                        <li><a href="#fish2">Fish</a></li>
-                        <li><a href="#fishnet">Fishnet</a></li>
-                        <li><a href="#flag">Flag</a></li>
-                        <li><a href="#flag-3">Flag</a></li>
-                        <li><a href="#flamingo1">Flamingo</a></li>
-                        <li><a href="#flyboard">Flyboard</a></li>
-                        <li><a href="#fox">Fox</a></li>
-                        <li><a href="#freesbiedog">Freesbiedog</a></li>
-                        <li><a href="#frisbee">Frisbee</a></li>
-                        <li><a href="#gametarget-7">Gametarget</a></li>
-                        <li><a href="#goldfish">Goldfish</a></li>
-                        <li><a href="#goldfish-3">Goldfish</a></li>
-                        <li><a href="#gorilla-13">Gorilla</a></li>
-                        <li><a href="#gymnastics1">Gymnastics</a></li>
-                        <li><a href="#gymnastics3">Gymnastics</a></li>
-                        <li><a href="#hand">Hand</a></li>
-                        <li><a href="#hand-9">Hand</a></li>
-                        <li><a href="#hand2">Hand</a></li>
-                        <li><a href="#hand3">Hand</a></li>
-                        <li><a href="#handball2">Handball</a></li>
-                        <li><a href="#hat-1">Hat</a></li>
-                        <li><a href="#hat-5">Hat</a></li>
-                        <li><a href="#helicopter">Helicopter</a></li>
-                        <li><a href="#houseride">Houseride</a></li>
-                        <li><a href="#iceskater2">Iceskater</a></li>
-                        <li><a href="#juggling">Juggling</a></li>
-                        <li><a href="#kangaroo">Kangaroo</a></li>
-                        <li><a href="#kite-10">Kite</a></li>
-                        <li><a href="#lamb">Lamb</a></li>
-                        <li><a href="#leaves">Leaves</a></li>
-                        <li><a href="#licenseplate">Licenseplate</a></li>
-                        <li><a href="#lion-12">Lion</a></li>
-                        <li><a href="#marathon">Marathon</a></li>
-                        <li><a href="#matrix">Matrix</a></li>
-                        <li><a href="#monkey">Monkey</a></li>
-                        <li><a href="#monkey-3">Monkey</a></li>
-                        <li><a href="#monkey-9">Monkey</a></li>
-                        <li><a href="#moorish_idol">Moorish Idol</a></li>
-                        <li><a href="#motorcycle">Motorcycle</a></li>
-                        <li><a href="#motorcycle-1">Motorcycle</a></li>
-                        <li><a href="#motorcycle-18">Motorcycle</a></li>
-                        <li><a href="#nature">Nature</a></li>
-                        <li><a href="#orangefish">Orangefish</a></li>
-                        <li><a href="#panda">Panda</a></li>
-                        <li><a href="#parkour">Parkour</a></li>
-                        <li><a href="#person-12">Person</a></li>
-                        <li><a href="#person-5">Person</a></li>
-                        <li><a href="#pig-2">Pig</a></li>
-                        <li><a href="#polo">Polo</a></li>
-                        <li><a href="#pool-15">Pool</a></li>
-                        <li><a href="#rabbit">Rabbit</a></li>
-                        <li><a href="#rabbit-10">Rabbit</a></li>
-                        <li><a href="#rabbits">Rabbits</a></li>
-                        <li><a href="#racing-16">Racing</a></li>
-                        <li><a href="#robot">Robot</a></li>
-                        <li><a href="#robot-1">Robot</a></li>
-                        <li><a href="#robot-19">Robot</a></li>
-                        <li><a href="#robot-5">Robot</a></li>
-                        <li><a href="#rollerman">Rollerman</a></li>
-                        <li><a href="#run">Run</a></li>
-                        <li><a href="#sailing">Sailing</a></li>
-                        <li><a href="#seagull">Seagull</a></li>
-                        <li><a href="#seastar">Seastar</a></li>
-                        <li><a href="#sepia-13">Sepia</a></li>
-                        <li><a href="#sepia-8">Sepia</a></li>
-                        <li><a href="#shaking">Shaking</a></li>
-                        <li><a href="#shark-2">Shark</a></li>
-                        <li><a href="#sheep-9">Sheep</a></li>
-                        <li><a href="#singer3">Singer</a></li>
-                        <li><a href="#sitcom">Sitcom</a></li>
-                        <li><a href="#skateboard-8">Skateboard</a></li>
-                        <li><a href="#skiing">Skiing</a></li>
-                        <li><a href="#snake">Snake</a></li>
-                        <li><a href="#soccer1">Soccer</a></li>
-                        <li><a href="#soldier">Soldier</a></li>
-                        <li><a href="#squirrel">Squirrel</a></li>
-                        <li><a href="#stripedfish">Stripedfish</a></li>
-                        <li><a href="#surfboard-12">Surfboard</a></li>
-                        <li><a href="#tank-16">Tank</a></li>
-                        <li><a href="#tank-9">Tank</a></li>
-                        <li><a href="#tennis">Tennis</a></li>
-                        <li><a href="#tiger-4">Tiger</a></li>
-                        <li><a href="#train-7">Train</a></li>
-                        <li><a href="#transparent_fish">Transparent Fish</a></li>
-                        <li><a href="#uav1">Uav</a></li>
-                        <li><a href="#umbrella-19">Umbrella</a></li>
-                        <li><a href="#umbrella-9">Umbrella</a></li>
-                        <li><a href="#volleyball">Volleyball</a></li>
-                        <li><a href="#volleyball-18">Volleyball</a></li>
-                        <li><a href="#volleyball-19">Volleyball</a></li>
-                        <li><a href="#wheel">Wheel</a></li>
-                        <li><a href="#whitefish">Whitefish</a></li>
-                        <li><a href="#wiper">Wiper</a></li>
-                        <li><a href="#wubble_bubble">Wubble Bubble</a></li>
-                        <li><a href="#yoyo-7">Yoyo</a></li>
-                        <li><a href="#zebra-10">Zebra</a></li>
-                        <li><a href="#zebra-16">Zebra</a></li>
-                        <li><a href="#zebrafish1">Zebrafish</a></li>
-                    </ul>
+                    <ul id="myList" class="navigator">
+                    <!-- List items will be dynamically added here -->
+                        </ul>
+                        
+                    <!-- Link your external JavaScript file -->
+                    <script src="styles.js"></script>
+                    
                     
                 </div>
                 <h3 id="vot-stb2022-dataset-preview">VOT 2023 dataset preview</h3>
 
                 <div class="videos">
-                    <!-- <video class="myvideo" id="squirrel" muted controls  >
-                        <source src="Videos/squirrel.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <video class="myvideo" id="drone1" muted controls >
-                        <source src="Videos/drone1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <video class="myvideo" id="ants1" muted controls  >
-                        <source src="Videos/ants1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <video class="myvideo" id="bicycle" muted controls  >
-                        <source src="Videos/bicycle.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <video class="myvideo" id="dog-7" muted controls  >
-                        <source src="Videos/dog-7.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <video class="myvideo" id="bolt1" muted controls  >
-                        <source src="Videos/bolt1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                    <video class="myvideo" id="car" muted controls  >
-                        <source src="Videos/car.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video> -->
-                
                     
-
                     <video class="myvideo" id="agility" muted controls>
                         <source src="Videos/agility.mp4" type="video/mp4">
                     </video>
@@ -821,6 +636,8 @@
             </a>
             -->
             <div>
+                This subpage was created by <i>Tomas Peterka</i> & <i>Simon Bravek</i>.
+                <br>
                 The website of the VOT challenges is hosted on the servers of the 
                 <a href="https://www.arnes.si/en/">Academic and Research Network of Slovenia (ARNES)</a>
                 
