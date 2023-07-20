@@ -1,4 +1,12 @@
-<script>
+# CVUT-FEL
+
+CVUT-FEL is a project for creating a website for VOT Challenge.
+
+## Installation
+
+Copy this python script, change values of <b>XXX</b> and run it. This will create folder called Videos with photos from your dataset.
+
+```python
 import os
 import cv2
 import shutil
@@ -32,4 +40,30 @@ if __name__ == "__main__":
     compression_factor = 50  # The higher the value, the more compressed the video will be
 
     compress_and_create_videos(source_folder, output_folder, frame_rate, compression_factor)
-</script>
+```
+
+## Usage
+
+```python
+import foobar
+
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
