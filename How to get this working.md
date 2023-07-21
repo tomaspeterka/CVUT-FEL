@@ -4,7 +4,7 @@ CVUT-FEL is a project for creating a website for VOT Challenge.
 
 ## Installation
 
-Copy this python script, change values of <b>XXX</b> and run it. This will create folder called Videos with photos from your dataset.
+Copy this python script, change values of <b>frame_rate, source_folder & compression_factor</b> and run it. This will create folder called Videos with photos from your dataset.
 
 ```python
 import os
@@ -20,7 +20,7 @@ def compress_and_create_videos(source_folder, output_folder, frame_rate=30, comp
         if not os.path.isdir(folder_path):
             continue
 
-        video_name = folder_name + '.avi'
+        video_name = folder_name + '.mp4'
         video_path = os.path.join(output_folder, video_name)
         video_writer = cv2.VideoWriter(video_path, cv2.VideoWriter_fourcc(*'XVID'), frame_rate, (640, 480))
 
@@ -45,16 +45,7 @@ if __name__ == "__main__":
 ## Usage
 
 ```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+XXX
 ```
 
 ## Contributing
