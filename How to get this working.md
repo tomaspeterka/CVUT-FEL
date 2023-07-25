@@ -22,7 +22,7 @@ def compress_and_create_videos(source_folder, output_folder, frame_rate=30, comp
 
         video_name = folder_name + '.mp4'
         video_path = os.path.join(output_folder, video_name)
-        video_writer = cv2.VideoWriter(video_path, cv2.VideoWriter_fourcc(*'XVID'), frame_rate, (640, 480))
+        video_writer = cv2.VideoWriter(video_path, cv2.VideoWriter_fourcc(*'mp4v'), frame_rate, (640, 480))
 
         for filename in os.listdir(folder_path):
             file_path = os.path.join(folder_path, filename)
