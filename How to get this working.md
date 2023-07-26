@@ -2,7 +2,24 @@
 
 CVUT-FEL is a project for creating a website for VOT Challenge.
 
-## Installation
+## Preparations
+
+We assume that your structure looks like this:
+<i>
+• (parent folder)
+    • (folder with name of the tracking object)
+        •video
+            •photo1.png/.jpeg/.jpg
+            •photo2.png/.jpeg/.jpg
+            •photo3.png/.jpeg/.jpg
+            •photo4.png/.jpeg/.jpg
+            •...
+        •(other files e.g. ground truth)
+    • (folder with name of the tracking object)
+    • (folder with name of the tracking object)
+    • (folder with name of the tracking object)
+    • ...
+    </i>
 
 Copy this python script, change values of <b>frame_rate, source_folder & compression_factor</b> and run it. This will create folder called Videos with photos from your dataset.
 
