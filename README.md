@@ -14,8 +14,8 @@ We assume that your structure looks like this:
             * photo1.png/.jpeg/.jpg
             * photo2.png/.jpeg/.jpg
             * photo3.png/.jpeg/.jpg
-            * photo4.png/.jpeg/.jpg  
-            *...
+            * photo4.png/.jpeg/.jpg
+            * ...
         * (other files e.g. ground truth)
     * (folder with name of the tracking object)
     * (folder with name of the tracking object)
