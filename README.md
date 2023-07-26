@@ -23,7 +23,7 @@ We assume that your structure looks like this:
     * ...
 </i>
 
-Copy this python script, change values of <b>frame_rate, source_folder & compression_factor</b> and run it. This will create folder called Videos with photos from your dataset.
+Copy this python script, change values of frame_rate & compression_factor and <b>source_folder</b> and run it. This will create folder called Videos with photos from your dataset.
 
 ```python
 import os
