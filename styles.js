@@ -150,21 +150,23 @@ const itemsList = [
   "zebra-10",
   "zebra-16",
   "zebrafish1"
-];
+]
+;
 
 // Function to capitalize the first letter, remove numbers, and replace underscores with spaces
-// Create the list more readable
 function formatItem(item) {
   // Special case for "F1"
   if (item === "f1") {
     return "F1";
   }
-  
-  return item.charAt(0).toUpperCase() + item.slice(1)
-    .replace(/[0-9]/g, '')
-    .replace(/_/g, ' ')
-    .replace(/-/g, '');
+
+  return item.charAt(0).toUpperCase() + item.slice(1).replace(/[0-9]/g, '').replace(/_/g, ' ').replace(/-/g, '');
 }
+
+// Function to capitalize the first letter, remove numbers, and replace underscores with spaces
+//function formatItem(item) {
+//return item.charAt(0).toUpperCase() + item.slice(1).replace(/[0-9]/g, '').replace(/_/g, ' ').replace(/-/g, '');
+//}
 
 // Get the unordered list element
 const myList = document.getElementById("myList");
