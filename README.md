@@ -60,16 +60,11 @@ if __name__ == "__main__":
 
     compress_and_create_videos(source_folder, output_folder, frame_rate, compression_factor)
 ```
+After you have folder with videos in it. You upload them on a server.
 
-## Usage
-
-
-
-## Contributing
+## Creation of a new subpage with preview of a dataset
 
 
-
-## License
 
 
 
