@@ -18,12 +18,12 @@ We assume that your structure looks like this:
             <li>photo4.png/.jpeg/.jpg</li>
             <li>...</li>
             </ul>
-        <li>•(other files e.g. ground truth)</li>
+        <li>(other files e.g. ground truth)</li>
         </ul>
-    <li>• (folder with name of the tracking object)</li>
-    <li>• (folder with name of the tracking object)</li>
-    <li>• (folder with name of the tracking object)</li>
-    <li>• ...</li>
+    <li>(folder with name of the tracking object)</li>
+    <li>(folder with name of the tracking object)</li>
+    <li>(folder with name of the tracking object)</li>
+    <li>...</li>
     </ul>
 </ul></i>
 
