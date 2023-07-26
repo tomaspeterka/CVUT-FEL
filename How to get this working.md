@@ -6,7 +6,7 @@ CVUT-FEL is a project for creating a website for VOT Challenge.
 
 We assume that your structure looks like this:
 <ul><i>
-• (parent folder)
+<li></li>(parent folder)</li>
     • (folder with name of the tracking object)
         •video
             •photo1.png/.jpeg/.jpg
